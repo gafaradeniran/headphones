@@ -67,9 +67,6 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --button-hover-color: var(--color-primary);
     --button-hover-text-decoration: none;
   
-    /** MOTION **/
-    /* --transition-duration: .3s;
-    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01); */
   }
 
 
@@ -143,7 +140,7 @@ a:active {
 
 .header-text,
 .header-subtext,
-.welcome-text {
+.welcome-text, .work-text, .work-title {
     text-align: center;
     flex-wrap: wrap;
 }
@@ -173,7 +170,16 @@ a:active {
     color: var(--color-white);
     justify-content: center;  
 }
-
-.welcome-text {
+.work-text, .work-title {
+    color: var(--color-black);
+}
+.work-text, .welcome-text {
     padding: 0% 30% 1% 30%;
+}
+.service-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: var(--section-body-padding);
+    flex-direction: row;
+    text-align: center;
 }

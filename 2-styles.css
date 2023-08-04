@@ -67,9 +67,6 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --button-hover-color: var(--color-primary);
     --button-hover-text-decoration: none;
   
-    /** MOTION **/
-    /* --transition-duration: .3s;
-    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01); */
   }
 
 
@@ -143,7 +140,7 @@ a:active {
 
 .header-text,
 .header-subtext,
-.welcome-text {
+.welcome-text, .work-text, .work-title {
     text-align: center;
     flex-wrap: wrap;
 }
@@ -173,7 +170,64 @@ a:active {
     color: var(--color-white);
     justify-content: center;  
 }
-
-.welcome-text {
+.header-body{
+    padding: var(--section-body-padding);
+}
+.work-text, .work-title {
+    color: var(--color-black);
+}
+.work-text, .welcome-text {
     padding: 0% 30% 1% 30%;
 }
+.service-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: var(--section-body-padding);
+    flex-direction: row;
+    align-items: flex-end;
+}
+.services {
+    flex: 1; /* Allow the services div to take equal space */
+    max-width: 150px; 
+    text-align: center;
+  }
+.services img {
+    width: 50%; /* Set the width of the images to 100% */
+  }
+.results-section {
+    background-image: url("images/headphones_hero_2.jpg");
+    background-position: 100% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the content horizontally */
+    padding: var(--section-body-padding);
+}
+.div-image {
+    background-image: url("images/pentagone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.results, .result-text {
+    color: var(--color-white); 
+    text-align: center;
+}
+.results {
+    margin-bottom: 0px;
+}
+.result-text {
+    font-size: 6px;
+    margin-top: 0px;
+}
+.result-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
